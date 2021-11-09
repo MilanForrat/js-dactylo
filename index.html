@@ -8,7 +8,42 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        
+        <header>
+            <nav>
+                <ul>
+                    <li>Difficulté : </li>
+                    <li>Thème : </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="container">
+            <div class="bloc-gauche">
+                <div id="mots-a-saisir"></div>
+                <label for="text-input">Ecrivez le mot :</label>
+                <input type="text" name="text-input" id="text-input" required>
+            </div>
+            <div class="bloc-droite">
+                <h2>Mots restants :</h2>
+                <div class="progress-bar" id="mots-bar"></div>
+                <h2>Temps écoulé :</h2>
+                <div class="temps"></div>
+                <h2>Score :</h2>
+                <div class="progress-bar">
+                    <label for="progress-word-bar">Mots valides:</label>
+                    <progress id="progress-word-bar" value="0" max="100"></progress>
+                </div>
+                <div class="progress-bar">
+                    <p>Caractères valides:</p>
+                    <p id="progress-caract-bar"></p>
+                </div>
+            </div>
+            <div class="bloc-dessous">
+                <h3>Récapitulatif des mots saisis :</h3>
+                <ul id="liste-mots-saisis">
+                    
+                </ul>
+            </div>
+        </section>
         <script src="./app.js"></script>
     </body>
 </html>
