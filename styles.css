@@ -46,13 +46,13 @@ h2{
 }
 #mots-a-saisir{
     font-size: 60px;
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
     transition: 1s;
     opacity:1;
 }
-#mots-a-saisir.pre-animation {
-    opacity:0;
-    color: rgb(0, 0, 0);
+#mots-a-saisir.pre-animation, #instructions.pre-animation {
+    opacity:0.5;
+    color: rgb(73, 73, 73);
 }
 .progress-bar{
     display: flex;
@@ -82,7 +82,7 @@ progress {
     width: 50%;
 }
 #mots-temps-block{
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +115,32 @@ progress {
     background-color: rgba(0, 136, 0, 0.733);
     color: rgb(175, 175, 175);
 }
+#instructions{
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 25px;
+    transition: 1s;
+}
 @media(max-width:500px){
-    
+    body{
+        display: block;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #text-input{
+        font-size: 20px;
+    }
+    #text-input::placeholder{
+        font-size: 15px;
+        font-style: italic;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+    #score-blocks{
+        font-size: 14px;
+    }
+    #mots-a-saisir{
+        font-size: 30px;
+    }
 }
