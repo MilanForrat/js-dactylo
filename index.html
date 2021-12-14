@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Entrainez-vous en Dactylo à l'aide de ce petit site fait-maison ! Trois niveaux de difficultés au choix ainsi qu'un mode évaluation pour se tester. Rien de plus important que de taper rapidement et proprement au clavier d'ordinateur.">
         <title>JS Dactylo</title>
         <link rel="stylesheet" href="./styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
@@ -14,7 +15,7 @@
     <body>
         <section class="container">
             <header>
-                <h1>Entrainement en Dactylo</h1>
+                <h1>Dactylo : entrainement</h1>
             </header>
             <div id="mots-a-saisir"></div>
             <label for="text-input" hidden>Ecrivez le mot :</label>
@@ -49,8 +50,47 @@
             </div>
             <div class="slot"></div>
         </section>
+        <section id="modal-options">
+            <div id="niveau-difficulte">
+                <h2>Choississez une difficulté pour l'entrainement :</h2>
+                <form name="form-difficulty" id="form-difficulty">
+                    <input type="radio" name="difficulte" value="facile">Facile
+                    <br>
+                    <input type="radio" name="difficulte" value="moyen" checked>Moyen
+                    <br>
+                    <input type="radio" name="difficulte" value="difficile">Difficile
+                    <br>
+                    <input type="submit" id="form-difficulty-submit" class="form-difficulty-btn" value="Valider">
+                </form>
+                <hr>
+                <form name="form-total-mots">
+                    <input type="radio" name="total-mots" value="35">35 Mots
+                    <br>
+                    <input type="radio" name="total-mots" value="100" checked>100 Mots
+                    <br>
+                    <input type="radio" name="total-mots" value="250">250 Mots
+                    <br>
+                    <input type="submit" id="form-total-submit" class="form-difficulty-btn" value="Valider">
+                </form>
+                <hr>
+                <button onclick="modeEvaluation()">Test d'évaluation (1 minute -> max de mots)</button>
+            </div>
+        </section>
+        <div id="restart-modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <h3>Choississez une option :</h3>
+                <br>
+                <form name="form-restart" id="form-restart">
+                    <input type="radio" name="restart" value="Entrainement">Entrainement<br>
+                    <input type="radio" name="restart" value="Evaluation">Evaluation<br>
+                    <input type="submit" id="form-restart-submit" class="form-difficulty-btn" value="Valider">
+                </form>
+            </div>
+        </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="./timer.js"></script>
+        <script src="./replayModal.js"></script>
         <script src="./app.js"></script>
     </body>
 </html>

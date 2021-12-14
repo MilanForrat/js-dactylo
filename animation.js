@@ -2,6 +2,7 @@ const containerSlot = document.querySelector('.slot');
 
 
 const emoji = ["👍", "😁", "🙌", "👏", "💪", "😎", "🥳", "✔", "🎉", "🎁", "🤪", "🙃", "🌟", "🔥", "✍", "💡"];
+// const emoji = ["bravo", "GG", "victoire !!"];
 fiesta();
 function fiesta(){
     // si l'animation est en cours d'éxécution, alors ne fais rien
