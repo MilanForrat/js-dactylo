@@ -1,17 +1,17 @@
 let modal = document.getElementById("restart-modal");
 let btnRestart = document.getElementById("btn-replay");
-let spanClose = document.getElementsByClassName("close")[0];
+let spanClose = document.getElementsByClassName("close")[1];
 let container = document.getElementsByClassName('container')[0];
 
-spanClose.onclick = closeModal();
+spanClose.onclick = closeRestartModal();
 
-function openModal(){
+function openRestartModal(){
     modal.style.display = "block";
     container.style.filter = "blur(10px)";
     choixRecommencer();
 }
 
-function closeModal(){
+function closeRestartModal(){
     modal.style.display = "none";
     container.style.filter = "none";
 }

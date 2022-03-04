@@ -1,4 +1,4 @@
-let tabMotDifficile = ["xylophone", "zéro", "à côté", "à droite", "à gauche", "au milieu", "au-delà", "au-dessous", "au-dessus", "debout", "dedans", "dehors", "en bas", "en face", "en haut", "loin", "près", "tard", "tôt", "zigzag", "hélicoptère", "camionette", "semi-remorque", "poids lourd", "abîmé", "troisième", "tertiaire", "spectaculaire", "incendie", "eau", "fumée", "smartphone", "portable", "à l'aise", "chance", "pizza", "orthophoniste", "orthographe", "araignée", "chimpanzé", "antarctique", "accueil", "reblochon", "camembert", "trottinette", "atterrir", "coccyx", "parallèle", "paragraphe", "perpendiculaire", "notamment", "appeler", "appel", "méditerranée", "intéressant", "coordonner", "à fortiori", "dilemme", "pyrénées", "succint", "succintement", "empathie", "émotion", "répartie", "zèbre", "autochtone", "automatique", "amélioration", "atmosphère", "atmosphérique", "nuage", "nuance", "prospérité", "proposition", "perplexe", "péremptoire", "questionnaire", "surveillance", "particularité", "similitude", "ressemblance", "sceptique","acquiescer", "appartenance", "appartement", "onomatopées", "malversations", "avertissement", "klaxon", "dispositif", "ampoule", "foudroyant", "improbable", "pertinent", "feuilleton", "métaphore", "amplitude", "hexagonale", "perroquet", "charismatique", "aiguë", "paranoïa", "stoïque", "faïence", "absentéisme", "homogénéiser", "simultanéité", "probabilité", "interprète", "assèchement", "belvédère", "secret", "dérèglement", "prélèvement", "phénomène", "géométrique", "ténèbreux", "succès", "réglementation", "répréhensible", "irrémédiable", "musée", "événement", "réverbère", "archaïque", "adéquation", "cacahuète", "kayak", "canoë", "toboggan", "imperméable", "imperturbable", "accordéon", "sillonner","retrouvailles", "communauté", "calligraphe", "bienveillante", "boomerang","tignasse", "blizzard", "carapater", "inoxydable","s’emmitoufler"];
+let tabMotDifficile = ["xylophone", "zéro", "à côté", "à droite", "à gauche", "au milieu", "au-delà", "au-dessous", "au-dessus", "debout", "dedans", "dehors", "en bas", "en face", "en haut", "loin", "près", "tard", "tôt", "zigzag", "hélicoptère", "camionette", "semi-remorque", "poids lourd", "abîmé", "troisième", "tertiaire", "spectaculaire", "incendie", "eau", "fumée", "smartphone", "portable", "à l'aise", "chance", "pizza", "orthophoniste", "orthographe", "araignée", "chimpanzé", "antarctique", "accueil", "reblochon", "camembert", "trottinette", "atterrir", "coccyx", "parallèle", "paragraphe", "perpendiculaire", "notamment", "appeler", "appel", "méditerranée", "intéressant", "coordonner", "à fortiori", "dilemme", "pyrénées", "succint", "succintement", "empathie", "émotion", "répartie", "zèbre", "autochtone", "automatique", "amélioration", "atmosphère", "atmosphérique", "nuage", "nuance", "prospérité", "proposition", "perplexe", "péremptoire", "questionnaire", "surveillance", "particularité", "similitude", "ressemblance", "sceptique","acquiescer", "appartenance", "appartement", "onomatopées", "malversations", "avertissement", "klaxon", "dispositif", "ampoule", "foudroyant", "improbable", "pertinent", "feuilleton", "métaphore", "amplitude", "hexagonale", "perroquet", "charismatique", "aiguë", "paranoïa", "stoïque", "faïence", "absentéisme", "homogénéiser", "simultanéité", "probabilité", "interprète", "assèchement", "belvédère", "secret", "dérèglement", "prélèvement", "phénomène", "géométrique", "ténèbreux", "succès", "réglementation", "répréhensible", "irrémédiable", "musée", "événement", "réverbère", "archaïque", "adéquation", "cacahuète", "kayak", "canoë", "toboggan", "imperméable", "imperturbable", "accordéon", "sillonner","retrouvailles", "communauté", "calligraphe", "bienveillante", "boomerang","tignasse", "blizzard", "carapater", "inoxydable","s'emmitoufler"];
 let tabMotFacile = ["dé", "facile", "bonjour", "difficle", "armoire", "grève", "halte", "utilisateur", "cartouche", "encre", "ordinateur", "simple", "charte", "quai", "banane", "barque", "poubelle", "mail", "enveloppe", "tarif", "même", "emploi", "gravier", "animal", "secteur", "étoile", "combien", "comment", "tampon", "livre", "histoire"];
 let tabMotMoyen = ["week-end","parchemin","attirail", "horizon", "simplification", "assurance", "artichaud", "compagnon", "civil", "artificielle","en face", "en haut", "loin", "près", "tard", "tôt", "zigzag", "hélicoptère", "camionette", "semi-remorque", "aléatoire", "gravier", "animal", "secteur", "étoile", "combien", "comment", "pourquoi", "yahourt", "chatouiller", "impressionner", "imprimer", "habiller", "factoriser", "simplifier", "décomposer", "joyeux", "wagon", "vagabond", "arctique", "crayon", "stylo", "feutre", "taille-crayon", "pointe", "mine", "gomme", "dessin", "coloriage", "rayure", "peinture", "pinceau", "couleur", "craie", "papier", "feuille", "cahier", "carnet", "carton", "ciseaux", "découpage", "pliage", "pli", "colle", "affaire", "boîte", "casier", "caisse", "trousse", "cartable", "jouet", "jeu", "pion", "dé", "domino", "puzzle", "cube", "perle", "chose", "carré", "rond", "pâte à modeler", "tampon", "livre", "histoire", "bibliothèque", "image", "album", "titre", "bande dessinée", "conte", "dictionnaire", "magazine", "catalogue", "page", "ligne", "mot", "enveloppe", "étiquette", "affiche", "alphabet", "appareil", "caméscope", "cassette", "cédé", "cédérom", "chaîne", "chanson", "chiffre", "contraire", "différence", "doigt", "écran", "écriture", "film", "fois", "idée", "instrument", "intrus", "lettre", "liste", "magnétoscope", "main", "micro", "modèle", "musique", "nom", "nombre", "orchestre", "ordinateur", "photo", "point", "poster", "pouce", "prénom", "question", "radio", "sens", "tambour", "télécommande", "téléphone", "télévision", "trait", "trompette", "voix", "poids lourd", "abîmé", "troisième", "tertiaire", "spectaculaire", "incendie", "eau", "fumée", "smartphone", "portable", "à l'aise", "chance", "pizza", "orthophoniste", "orthographe", "araignée", "chimpanzé", "antarctique", "accueil", "reblochon", "camembert", "trottinette", "atterrir", "coccyx", "parallèle", "paragraphe", "perpendiculaire", "notamment", "appeler", "appel", "méditerranée", "intéressant", "coordonner", "à fortiori", "dilemme", "pyrénées", "succint", "succintement", "empathie", "émotion",]
 let goodWordScore = 0;
@@ -8,30 +8,72 @@ let deletedCaractScore = 0;
 let winScore = 100;
 let tabConseils = ['Pensez à lever les yeux, ne regardez pas votre clavier.',"Le placement de vos doigts ne m'importe peu, tant que vous êtes efficace","Il faut s'entraîner tous les jours pour s'améliorer","La dactylo fait partie des soft-skills attendues par les employeurs",'La dactylo vous aide à taper plus vite et à faire moins de fautes de frappe'];
 let tabMot= tabMotFacile;
-
+let niveauDifficulte = document.getElementById('niveau-difficulte');
+let titreTemps = document.getElementById('titre-temps');
 
 generateWord(tabMot);
 generateWordScore(winScore, 0);
 instructions();
+badgeNiveau();
 choixEntrainement();
+
+function badgeNiveau(){
+    if(tabMot == tabMotFacile){
+        niveauDifficulte.innerHTML="Facile";
+        niveauDifficulte.style.backgroundColor = "green";
+    }
+    else if(tabMot == tabMotMoyen){
+        niveauDifficulte.innerHTML="Moyen";
+        niveauDifficulte.style.backgroundColor = "orange";
+    }
+    else if(tabMot == tabMotDifficile && evaluation == true){
+        niveauDifficulte.innerHTML="Evaluation";
+        niveauDifficulte.style.backgroundColor = "blue";
+    }
+    else{
+        niveauDifficulte.innerHTML="Difficile";
+        niveauDifficulte.style.backgroundColor = "red";
+    }
+}
 
 function choixEntrainement(){
     let radios = document.forms["form-difficulty"].elements["difficulte"];
     for(element in radios) {
         if(radios[0].checked){
             console.log("facile");
+            evaluation = false;
             tabMot = tabMotFacile;
             generateWord(tabMot);
+            resetScore();
+            resetInput();
+            resetTimerTraining()
+            badgeNiveau();
+            titreTemps.innerHTML="Temps écoulé :";
+            closeOptionsModal();
         }
         else if(radios[1].checked){
             console.log("moyen");
+            evaluation = false;
             tabMot = tabMotMoyen;
             generateWord(tabMot);
+            resetScore();
+            resetInput();
+            resetTimerTraining()
+            badgeNiveau();
+            titreTemps.innerHTML="Temps écoulé :";
+            closeOptionsModal();
         }
         else{
             console.log("difficile");
+            evaluation = false;
             tabMot = tabMotDifficile;
             generateWord(tabMot);
+            resetScore();
+            resetInput();
+            resetTimerTraining()
+            badgeNiveau();
+            titreTemps.innerHTML="Temps écoulé :";
+            closeOptionsModal();
         }
     }  
 }
@@ -49,6 +91,10 @@ function modeEvaluation(){
     hrs=0;
     showTime(hrs,min,sec);
     evaluation = true;
+    tabMot = tabMotDifficile;
+    badgeNiveau();
+    titreTemps.innerHTML="Temps restant :"
+    closeOptionsModal();
 }
 
 function resetScore(){
@@ -214,7 +260,7 @@ function restart(){
     btnReplay.innerHTML = "Recommencer";
     btnReplay.id = "btn-replay";
     btnReplay.style.cursor = "pointer";
-    btnReplay.setAttribute('onclick', 'openModal()');
+    btnReplay.setAttribute('onclick', 'openRestartModal');
     scoreDiv.appendChild(btnReplay);
 }
 

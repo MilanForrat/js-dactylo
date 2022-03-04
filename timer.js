@@ -76,6 +76,10 @@ function updateCountdownEval(){
     t = setTimeout(generateEvalTimer, 1000);
 }
 
+function resetTimerTraining(){
+    showTime(0,0,0);
+}
+
 function checkEvalTimer(){
     if(secEval<=0){
         clearTimeout(t);

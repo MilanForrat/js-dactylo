@@ -21,13 +21,17 @@
             <label for="text-input" hidden>Ecrivez le mot :</label>
             <input type="text" placeholder="⤤ Saisir le mot ci-dessus ⤣" name="text-input" id="text-input" autocomplete="off" required>
             <div id="instructions"></div>
+            <div id="options-flex">
+                <span id="niveau-difficulte"></span>
+                <button id="btn-options" onclick="openOptionsModal()">Afficher les options</button>
+            </div>
             <div id="mots-temps-block">
                 <div id="nombre-mot-restant">
                     <h2>Mots restants :</h2>
                     <div><span id="mots-restants"></span> / <span id="mots-gagnants"></span></div>
                 </div>
                 <div id="temps">
-                    <h2>Temps écoulé :</h2>
+                    <h2 id="titre-temps">Temps écoulé :</h2>
                     <div id="temps-chrono"><time>00:00:00</time></div>
                 </div>
             </div>
@@ -50,30 +54,33 @@
             </div>
             <div class="slot"></div>
         </section>
-        <section id="modal-options">
-            <div id="niveau-difficulte">
-                <h2>Choississez une difficulté pour l'entrainement :</h2>
-                <form name="form-difficulty" id="form-difficulty">
-                    <input type="radio" name="difficulte" value="facile">Facile
-                    <br>
-                    <input type="radio" name="difficulte" value="moyen" checked>Moyen
-                    <br>
-                    <input type="radio" name="difficulte" value="difficile">Difficile
-                    <br>
-                    <input type="submit" id="form-difficulty-submit" class="form-difficulty-btn" value="Valider">
-                </form>
-                <hr>
-                <!-- <form name="form-total-mots">
-                    <input type="radio" name="total-mots" value="35">35 Mots
-                    <br>
-                    <input type="radio" name="total-mots" value="100" checked>100 Mots
-                    <br>
-                    <input type="radio" name="total-mots" value="250">250 Mots
-                    <br>
-                    <input type="submit" id="form-total-submit" class="form-difficulty-btn" value="Valider">
-                </form>
-                <hr> -->
-                <button onclick="modeEvaluation()">Test d'évaluation (1 minute -> max de mots)</button>
+        <section id="modal-options" class="modal">
+            <span class="close" onclick="closeOptionsModal()">&times;</span>
+            <div class="modal-content">
+                <div id="niveau-difficulte">
+                    <h2>Choississez une difficulté pour l'entrainement :</h2>
+                    <form name="form-difficulty" id="form-difficulty">
+                        <input type="radio" name="difficulte" value="facile">Facile
+                        <br>
+                        <input type="radio" name="difficulte" value="moyen" checked>Moyen
+                        <br>
+                        <input type="radio" name="difficulte" value="difficile">Difficile
+                        <br>
+                        <input type="submit" id="form-difficulty-submit" class="form-difficulty-btn" value="Valider">
+                    </form>
+                    <hr>
+                    <!-- <form name="form-total-mots">
+                        <input type="radio" name="total-mots" value="35">35 Mots
+                        <br>
+                        <input type="radio" name="total-mots" value="100" checked>100 Mots
+                        <br>
+                        <input type="radio" name="total-mots" value="250">250 Mots
+                        <br>
+                        <input type="submit" id="form-total-submit" class="form-difficulty-btn" value="Valider">
+                    </form>
+                    <hr> -->
+                    <button onclick="modeEvaluation()">Test d'évaluation (1 minute -> max de mots)</button>
+                </div>
             </div>
         </section>
         <div id="restart-modal" class="modal">
@@ -90,7 +97,12 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="./timer.js"></script>
+        <script src="./optionModal.js"></script>
         <script src="./replayModal.js"></script>
         <script src="./app.js"></script>
     </body>
 </html>
+
+<!-- TODO :
+- if you want to stop evaluation and train again reset evaluation mode
+-->
